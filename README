@@ -1,7 +1,18 @@
 Auto Installation Scripts for Linux
+  Linuxディストリビューションをインストールした直後に追加でインストールするパッケージなどを自動的にインストールして簡単な設定までこなすスクリプト。
+  ユーザー名、NIC設定はちゃんと書き換えてから使ってね。
+
+※注意事項※
+動作確認してないので使用は自己責任でお願いします！
+  
+対応OS
+  CentOS 6.x
+  Amazon Linux (AWS EC2)
+  RHELとかFedoraでも動くかも
 
 + sacloud_setup.sh
-   さくらのクラウドでCentos6をCDイメージからインストールした場合
+  さくらのクラウドでCentos6をCDイメージからインストールした場合
 
 + awsec2_setup.sh
-   AWS EC2でAmazon Linuxをインストールした場合
+  AWS EC2でAmazon Linuxをインストールした場合
+  こっちの方がそれっぽいけど実際はsacloud_setup.shのほうがちゃんと作ってあるはず。

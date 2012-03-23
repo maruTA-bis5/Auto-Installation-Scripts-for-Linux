@@ -1,16 +1,16 @@
 #!/bin/bash
 unalias cp
-useradd -g users -G wheel takayuki
-passwd takayuki
+useradd -g users -G wheel new_user
+passwd new_user
 
 cat /etc/sysconfig/network-scripts/ifcfg-eth0 | sed 's/ONBOOT="no"/ONBOOT="yes"/' > /dev/shm/ifcfg-eth0
 echo 'BOOTPROTO=none
-IPADDR=133.242.19.120
-NETMASK=255.255.255.0
+IPADDR=0.0.0.0
+NETMASK=0.0.0.0
 TYPE=Ethernet
-GATEWAY=133.242.19.1
-DNS1=133.242.0.3
-DNS2=133.242.0.4'>>/dev/shm/ifcfg-eth0
+GATEWAY=0.0.0.0
+DNS1=0.0.0.0
+DNS2=0.0.0.0'>>/dev/shm/ifcfg-eth0
 cp /dev/shm/ifcfg-eth0 /etc/sysconfig/network-scripts/ -f
 /etc/init.d/network restart
 

@@ -1,0 +1,7 @@
+Auto Installation Scripts for Linux
+
++ sacloud_setup.sh
+   さくらのクラウドでCentos6をCDイメージからインストールした場合
+
++ awsec2_setup.sh
+   AWS EC2でAmazon Linuxをインストールした場合
